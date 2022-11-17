@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
       PROJECT_NAME = "Neptun"
-      OWNER_NAME   = "Denis Astahov"
+      OWNER_NAME   = "Soloma70
     }
 
     stages {
@@ -17,7 +17,8 @@ pipeline {
             steps {
                 echo "Start of Stage Test..."
                 echo "Testing......."
-                echo "Privet ${PROJECT_NAME}"
+                echo "This is Script File read from GitHub"
+                echo "Hello ${PROJECT_NAME}"
                 echo "Owner is ${OWNER_NAME}"
                 echo "End of Stage Build..."
             }
@@ -36,7 +37,7 @@ pipeline {
         }
         stage('4-Celebrate') {
             steps {
-                echo "CONGRATULYACIYA!"
+                echo "CONGRATULATION!"
             }
         }	
     }
